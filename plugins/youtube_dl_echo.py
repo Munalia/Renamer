@@ -108,6 +108,10 @@ async def echo(bot, update):
     if "hotstar" in url:
         command_to_exec.append("--geo-bypass-country")
         command_to_exec.append("IN")
+    if "zee5" in url:
+        command_to_exec.append("--geo-bypass-country")
+        command_to_exec.append("IN")
+
     if youtube_dl_username is not None:
         command_to_exec.append("--username")
         command_to_exec.append(youtube_dl_username)
